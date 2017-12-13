@@ -1,0 +1,30 @@
+.preview {
+  position: relative;
+  padding: 5px;
+  border: 1px solid #666;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  background: #eee;
+  img {
+    width: 100%;
+  }
+
+  .preview-title {
+    position: absolute;
+    width: calc(100% - 10px);
+    bottom: 5px;
+    left: 5px;
+    padding: 5px;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: #eee;
+    font-weight: normal;
+    display: none;
+  }
+
+  &:hover {
+    .preview-title {
+      display: block;
+    }
+  }
+}
